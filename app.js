@@ -9,7 +9,6 @@ var clicked_card_id = 0;
 var firstId = 0;
 var secondId = 0;
 var score = 0;
-
 var card_array = [".fa fa-diamond", ".fa fa-paper-plane-o", ".fa fa-anchor", ".fa fa-bolt", ".fa fa-cube", ".fa fa-leaf", ".fa fa-bicycle", ".fa fa-bomb"];
 
 function store_id(){

@@ -23,6 +23,7 @@ function store_in_array(first_id){
 }
 
 function check(){
+if(clicked_cards.length == 2){
 	if (clicked_cards[0] == clicked_cards[1]){
 		clicked_cards[0].addClass('match');
 		clicked_cards[1].addClass('match');
@@ -34,6 +35,7 @@ function check(){
 		clicked_cards.pop();
 		score = score - 1;
 	}
+}
 }
 
 function check_win(pairs){

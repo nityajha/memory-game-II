@@ -10,7 +10,7 @@ var firstId = 0;
 var secondId = 0;
 var score = 0;
 
-const card_array = [".fa fa-diamond", ".fa fa-paper-plane-o", ".fa fa-anchor", ".fa fa-bolt", ".fa fa-cube", ".fa fa-leaf", ".fa fa-bicycle", ".fa fa-bomb"];
+var card_array = [".fa fa-diamond", ".fa fa-paper-plane-o", ".fa fa-anchor", ".fa fa-bolt", ".fa fa-cube", ".fa fa-leaf", ".fa fa-bicycle", ".fa fa-bomb"];
 
 function store_id(){
 	first_id = $(this).attr("id") ;
@@ -55,8 +55,8 @@ function shuffle(array) {
     return array;
 }
 
-$('.restart').click(reset_game);
-function reset_game(game){
+$('.restart').click(reset_game());
+function reset_game(){
 	pairs = 0;
 	clicked_cards = [];
 	moves = 0;
@@ -65,4 +65,4 @@ function reset_game(game){
 	firstId = 0;
 	secondId = 0;
 	shuffle(card_array);
-};
+}
